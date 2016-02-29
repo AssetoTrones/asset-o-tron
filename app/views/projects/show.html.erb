@@ -4,11 +4,33 @@
   <strong>Name:</strong>
   <%= @project.name %>
 </p>
+<p>
+  <strong>Id:</strong>
+  <%= @project.id %>
+</p>
 
 <p>
   <strong>Description:</strong>
   <%= @project.description %>
 </p>
+
+<p>
+  <strong>Assets associated to this project:</strong>
+  <% for resource in @project.resource %>
+    <ul>
+      <li><%=resource.name%></li>
+    </ul>
+  <% end %>
+</p>
+
+<h2>All the resources DEBUG</h2>
+<%
+	resources = Resource.all
+	for resource in resources
+%>
+	Project association: <%= resource.project_ids %> id:<%=resource.id%>: <%=resource.description%>: <%=resource.name%> <br>
+<% end%>
+
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>

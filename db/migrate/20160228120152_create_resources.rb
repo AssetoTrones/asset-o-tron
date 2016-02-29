@@ -3,6 +3,7 @@ class CreateResources < ActiveRecord::Migration
     create_table :resources do |t|
       t.string :name
       t.string :description
+      t.string :project_ids, array: true, default: []
 
       t.timestamps null: false
     end
