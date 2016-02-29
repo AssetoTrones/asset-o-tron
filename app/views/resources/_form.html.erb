@@ -20,9 +20,21 @@
     <%= f.text_field :description %>
   </div>
   <div class="field">
-    <%= f.label "Project association" %><br>
-    <%= f.text_field :project_ids %>
+    <%= f.label :location %><br>
+    <%= f.text_field :url %>
   </div>
+
+  <%
+    projects = Project.all
+
+  %>
+
+  <div class="field">
+    <%= f.label :projects %><br>
+    <%= f.select :project_ids, options_from_collection_for_select(projects, "id", "name", "3"), multiple: true %>
+  </div>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>

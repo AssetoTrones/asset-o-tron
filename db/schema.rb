@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20160229090045) do
   create_table "projects", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
+    t.string   "url"
     t.string   "resource_ids", default: [],              array: true
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 20160229090045) do
   create_table "resources", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
+    t.string   "url"
     t.string   "project_ids", default: [],              array: true
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false

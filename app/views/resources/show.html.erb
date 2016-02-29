@@ -10,5 +10,32 @@
   <%= @resource.description %>
 </p>
 
+<p>
+  <strong>Location:</strong>
+  <%= @resource.url %>
+</p>
+
+<p>
+  <strong>Asset:</strong>
+</p>
+<p>
+  <%= image_tag @resource.url.to_s %>
+</p>
+
+
+
+<p>
+  <strong>projects:</strong>
+  <%= @resource.project_ids %>
+</p>
+
+<h2>All the resources DEBUG</h2>
+<%
+	resources = Resource.all
+	for resource in resources
+%>
+	 Associated project <%= resource.project_ids %> :: <%=resource.name%> id:<%=resource.id%>: <%=resource.description%>:  <br>
+<% end%>
+
 <%= link_to 'Edit', edit_resource_path(@resource) %> |
 <%= link_to 'Back', resources_path %>
