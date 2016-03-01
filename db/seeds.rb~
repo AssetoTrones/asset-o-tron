@@ -37,6 +37,6 @@ project_list = [
   ["Asset-O-Tron", "Final project of Talentum Empleo developed by Ronald Romero, Nerea Díaz, Diego Sánchez, Lucas Gómez y Marco Antonio López de la Nieta.", "", [1,2,3,4,5,6]]
 ]
 
-project_list.each do |name,description,url,resource_ids|
+project_list.each do |name,descriptio,url,resource_ids|
   Project.create(name: name, description: description, url: url, resource_ids: resource_ids)
 end

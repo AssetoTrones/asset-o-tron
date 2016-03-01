@@ -18,11 +18,10 @@
   <strong>Assets associated to this project:</strong>
   <% for resource in @project.resource %>
     <ul>
-      <li><%=resource.name%></li>
+      <li><%= image_tag resource.url.to_s, width: '20%' %></li>
     </ul>
   <% end %>
 </p>
-
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>

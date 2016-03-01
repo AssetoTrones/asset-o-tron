@@ -9,6 +9,7 @@
 <body>
 
   <div class="container">
+    <%= link_to "My account", "welcome/account", class: "btn" %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%if user_signed_in? %>

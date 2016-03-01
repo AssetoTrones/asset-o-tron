@@ -1,0 +1,132 @@
+/****general****/
+h1, h2, h3, tr, th {
+
+	color: #000000;
+	text-align: center;
+}
+td {
+	margin: 15em;
+	background-color: red;
+}
+a {
+	color:#AF574D;
+}
+
+.form-group {
+
+	color:#FFFFFF;
+}
+
+.head {
+
+	color:#000000;
+}
+/****navbar****/
+.navbar {
+
+	background: #FA8072;
+	color: #000000;
+}
+.navbar-toggle-collapsed {
+	color: #FFFFFF;
+}
+/****container****/
+.container {
+
+	text-align: center;
+
+}
+
+/****body****/
+body {
+	background-color: #FFFFF0;
+	text-align: center;
+	font-family: "Lucida Console";
+}
+
+/****butons****/
+.btn {
+	border: none;
+
+	background: #FA8072;
+	color: #FFFFFF;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;
+}
+
+.btn:hover {
+
+	background: #FA8072;
+	color: #FA8072;
+	box-shadow: inset 0 0 0 3px #FA8072;
+}
+/*small butons*/
+.btn-small {
+	border: none;
+	background: #FA8072;
+	color: #FFFFFF;
+	margin: .5em;
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 10px;
+	position: relative;
+	box-sizing: content-box;
+	transition: all 500ms ease;
+}
+
+.btn:hover {
+	background: rgba(0,0,0,0);
+	color: #9C1313;
+	box-shadow: inset 0 0 0 3px #9C1313;
+}
+/*link_to*/
+.link_to {
+	border: none;
+	background: #FA8072;
+	color: #FFFFFF;
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 10px;
+	position: relative;
+	box-sizing: content-box;
+	transition: all 500ms ease;
+}
+
+.link_to:hover {
+	background: rgba(0,0,0,0);
+	color: #FA8072;
+	box-shadow: inset 0 0 0 3px #FA8072;
+}
+
+/****footer****/
+.footer {
+	background: #FA8072;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	bottom: 0
+}
+/****fiel, action****/
+
+.field, .actions {
+	text-align: center;
+	color: #464646;
+}
+/****table****/
+.table {
+	text-align: center;
+	color: #464646;
+}
+.image_tag {
+
+	position: absolute;
+	right: 30px;
+	width: auto;
+	height: auto;
+	opacity: 0.3;
+	filter: alpha(opacity=40);
+}
