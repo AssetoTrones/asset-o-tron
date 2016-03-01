@@ -17,17 +17,14 @@
   <%= image_tag @resource.url.to_s, width: '70%' %>
 </p>
 
-<% ids = @resource.project_ids %>
-
 <p>
-  <strong>projects:</strong>
-  <%= ids %>
+  <strong>Projects where this asset is  being used:</strong>
+  <% for project in @resource.project %>
+    <ul>
+      <li><%=project.name%></li>
+    </ul>
+  <% end %>
 </p>
-
-<h2>Project name DEBUG</h2>
-  <%=
-  	projects = Project.where ids
-    %>
 
 <%= link_to 'Edit', edit_resource_path(@resource) %> |
 <%= link_to 'Back', resources_path %>
