@@ -5,9 +5,16 @@ h1, h2, h3, tr, th {
 	text-align: center;
 }
 td {
-	margin: 15em;
-	background-color: red;
+	height: 3em;
 }
+.navbar-inverse .navbar-nav>li>a  {
+	color: #804842;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand {
+	color: #804842;
+}
+
 a {
 	color:#AF574D;
 }

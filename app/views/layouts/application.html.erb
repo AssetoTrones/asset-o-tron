@@ -12,6 +12,7 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%if user_signed_in? %>
+      <%= render "nav" %>
       <p>Welcome beloved DUMMY</p>
       <p><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></p>
     <%end%>
