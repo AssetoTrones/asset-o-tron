@@ -30,8 +30,7 @@
   %>
 
   <div class="field">
-    <%= f.label :projects %><br>
-    <%= f.select :project_ids, options_from_collection_for_select(projects, "id", "name", "3"), multiple: true %>
+    <%= select_tag "resource[project_ids[]]", options_from_collection_for_select(projects, "id", "name"), multiple: true, size: 5 %>
   </div>
 
 

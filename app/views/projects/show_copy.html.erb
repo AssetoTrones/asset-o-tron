@@ -23,6 +23,14 @@
   <% end %>
 </p>
 
+<h2>All the resources DEBUG</h2>
+<%
+	resources = Resource.all
+	for resource in resources
+%>
+	Project association: <%= resource.project_ids %> id:<%=resource.id%>: <%=resource.description%>: <%=resource.name%> <br>
+<% end%>
+
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
