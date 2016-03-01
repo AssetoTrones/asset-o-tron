@@ -21,3 +21,9 @@
 # resource_list.each do |name,description,url,project_ids|
 #   Resource.create(name: name, description: description, url: url, project_ids: project_ids)
 # end
+
+Resource.create(name: "Ruby", description: "Ruby poster created by redradix", url: "https://github.com/redradix/posters/raw/master/png/ruby.png", project_ids: [1])
+
+Resource.create(name: "HTML5", description: "AngularJS poster created by redradix", url: "https://raw.githubusercontent.com/redradix/posters/master/png/html5.png", project_ids: [1,2])
+
+Resource.create(name: "CSS3", description: "CSS3 poster created by redradix", url: "https://github.com/redradix/posters/raw/master/png/css3.png", project_ids: [1])

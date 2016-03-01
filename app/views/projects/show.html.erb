@@ -4,38 +4,24 @@
   <strong>Name:</strong>
   <%= @project.name %>
 </p>
-<p>
-  <strong>Id:</strong>
-  <%= @project.id %>
-</p>
 
 <p>
   <strong>Description:</strong>
   <%= @project.description %>
 </p>
 
-<p>
-  <strong>Assets associated to this project:</strong>
-  <% for resource in @project.resource %>
-    <ul>
-      <li><%= image_tag resource.url.to_s, width: '20%' %></li>
-    </ul>
-  <% end %>
-</p>
-
-<p>
-  <strong>Assets associated to this project:</strong>
-  <% for resource in @project.resource %>
-    <ul>
-      <li><%= image_tag resource.url.to_s, width: '20%' %></li>
-    </ul>
-  <% end %>
-</p>
-
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">Thumbnail Gallery</h1>
+        <h1 class="page-header">Assets associated to this project</h1>
     </div>
+    <% for resource in @project.resource %>
+      <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+
+        <a class="thumbnail" href="#">
+            <%= image_tag resource.url.to_s, class: "img-responsive" %>
+        </a>
+      </div>
+    <% end %>
 </div>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |

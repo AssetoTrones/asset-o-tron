@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -14,7 +15,6 @@
     <%if user_signed_in? %>
       <%= render "nav" %>
       <p>Welcome beloved DUMMY</p>
-      <p><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></p>
     <%end%>
   <%= yield %>
   </div>

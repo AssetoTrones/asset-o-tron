@@ -1,3 +1,10 @@
+body {
+	background-image: url('asseto.png');
+	background-repeat: no-repeat;
+	background-position: right 140px;
+	background-origin: content-box;
+}
+
 /****general****/
 h1, h2, h3, tr, th {
 
