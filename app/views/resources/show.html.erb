@@ -26,5 +26,31 @@
   <% end %>
 </p>
 
+<p>
+  <strong>Comments:</strong>
+  <% for comment in @resource.comments %>
+    <li>
+      <p>Author: <%= comment.author %></p>
+      <p>Says: <%= comment.comment %></p>
+    </li>
+  <% end %>
+</p>
+<%# TODO: field class %>
+<p>
+  <%= form_tag( { controller: "comments", action: "create" }, method: "get") %>
+  <%= hidden_field_tag(:id, @resource.id) %>
+  <p>
+    <%= label_tag(:author, "Author: ") %>
+    <%= text_field_tag(:author) %>
+  </p>
+  <p>
+    <%= label_tag(:comment, "Comment: ") %>
+    <%= text_field_tag(:comment) %>
+  </p>
+  <p>
+    <%= submit_tag("Add Asset") %>
+  </p>
+</p>
+
 <%= link_to 'Edit', edit_resource_path(@resource) %> |
 <%= link_to 'Back', resources_path %>
