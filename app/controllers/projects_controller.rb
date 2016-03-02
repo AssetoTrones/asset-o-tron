@@ -4,6 +4,7 @@ class ProjectsController < ApplicationController
 
   def list
     @projects = Project.all
+    @resources = Resource.all
     render :list
   end
 

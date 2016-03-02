@@ -12,14 +12,11 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">Assets associated to this project</h1>
+        <h4 class="page-header">Assets associated to this project</h4>
     </div>
     <% for resource in @project.resource %>
       <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-
-        <a class="thumbnail" href="#">
-            <%= image_tag resource.url.to_s, class: "img-responsive" %>
-        </a>
+          <%= link_to image_tag(resource.url.to_s, :class => 'img-responsive'), {:action => 'show', :controller => 'resources'}, :class => 'thumbnail' %>
       </div>
     <% end %>
 </div>

@@ -12,6 +12,26 @@ a.thumbnail.active {
   border-color: #804842;
 }
 
+table {
+color: #333; /* Lighten up font color */
+font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+width: 640px;
+border-collapse:
+collapse; border-spacing: 0;
+}
+
+td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+
+th {
+background: #F3F3F3; /* Light grey background */
+font-weight: bold; /* Make sure they're bold */
+}
+
+td {
+background: #FAFAFA; /* Lighter grey background */
+text-align: center; /* Center our text */
+}
+
 /* views */
 @media only screen and (max-width : 768px) {
 	body {
@@ -21,11 +41,19 @@ a.thumbnail.active {
 }
 
 /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-      .mini{
-        width: 35%;
-      }
-    }
+@media only screen and (min-width : 768px) {
+  .mini{
+    width: 35%;
+  }
+}
+
+#up{
+  margin:auto 0;
+}
+
+.field{
+  margin-bottom: 1em;
+}
 
 /****general****/
 h1, h2, h3, tr, th {

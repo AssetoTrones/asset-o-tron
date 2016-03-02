@@ -4,7 +4,13 @@
     background-repeat: no-repeat;
     background-position: right 140px;
     background-origin: content-box;
-  }</style>
+  }
+	@media only screen and (max-width : 768px) {
+		body {
+			background-size: 40%;
+			background-position: center 350px;
+		}
+	}</style>
 
 <div class="row">
     <div class="col-md-9">
@@ -16,8 +22,9 @@
           <div class="row">
 			<div class="col-md-4 text-center">
           <p><%= link_to 'Create a new project', '/projects/new' %></p>
-          <p><%= link_to "Projects I'm working on", projects_path %></p>
+          <p><%= link_to 'Create a new asset', '/resources/new' %></p>
           <p><%= link_to "My projects", projects_path %></p>
+          <p><%= link_to "Manage resources", resources_path %></p>
           <p><%= link_to "Profile", 'welcome/profile' %></p>
       </div>
     </div>

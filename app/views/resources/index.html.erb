@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Resources</h1>
+<h1>Resources</h1>
 
 <table>
   <thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= resource.name %></td>
         <td><%= resource.description %></td>
-        <td><%= link_to 'Show', resource, class: "btn-small" %></td>
-        <td><%= link_to 'Edit', edit_resource_path(resource), class: "btn-small" %></td>
-        <td><%= link_to 'Destroy', resource, method: :delete, class: "btn-small",  data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', resource %></td>
+        <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
+
       </tr>
     <% end %>
   </tbody>

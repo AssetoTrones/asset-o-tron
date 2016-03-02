@@ -23,18 +23,20 @@
     <%= f.label :url %><br>
     <%= f.text_field :url %>
   </div>
+  <div class="field">
+    <%= f.file_field :picture, id: "up", style: "margin:auto;" %>
+  </div>
 
   <%
     projects = Project.all
-
   %>
 
   <div class="field">
-    <%= select_tag "resource[project_ids[]]", options_from_collection_for_select(projects, "id", "name"), multiple: true, size: 5 %>
+    <%= f.label "Insert in existing projects" %><br>
+    <%= select_tag "resource[project_ids[]]", options_from_collection_for_select(projects, "id", "name"), multiple: true, size: 2 %>
   </div>
 
-
   <div class="actions">
-    <%= f.submit %>
+    <button type="button" name="button" onclick="alert('Nice try Dummy! \nUnfortunately this action is not allowed for your user role');">Create new</button>
   </div>
 <% end %>
