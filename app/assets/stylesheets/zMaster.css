@@ -1,8 +1,16 @@
 body {
-	background-image: url('asseto.png');
+	background-image: url('http://uryud.com/assetotron/asseto.png');
 	background-repeat: no-repeat;
 	background-position: right 140px;
 	background-origin: content-box;
+}
+
+/* views */
+@media only screen and (max-width : 768px) {
+	body {
+		background-size: 40%;
+		background-position: center 230px;
+	}
 }
 
 /****general****/

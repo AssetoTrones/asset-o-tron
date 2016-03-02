@@ -2,12 +2,15 @@ class ResourcesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
 
+  def list
+    @resources = Resource.all
+    render :list
+  end
+
   # GET /resources
   # GET /resources.json
   def index
     @resources = Resource.all
-    @tags = Tag.all
-
   end
 
   # GET /resources/1

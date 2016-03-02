@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'welcome/account'
   get 'comments/create'
+  get 'resources/list'
+  get 'projects/list'
 
   resources :resources
   resources :projects

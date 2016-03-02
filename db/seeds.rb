@@ -22,6 +22,8 @@
 #   Resource.create(name: name, description: description, url: url, project_ids: project_ids)
 # end
 
+Project.create(name: "Posters Redradix", description: "programming posters by Redradix", url: "https://github.com/redradix/posters", resource_ids: [1,2,3])
+
 Resource.create(name: "Ruby", description: "Ruby poster created by redradix", url: "https://github.com/redradix/posters/raw/master/png/ruby.png", project_ids: [1])
 
 Resource.create(name: "HTML5", description: "AngularJS poster created by redradix", url: "https://raw.githubusercontent.com/redradix/posters/master/png/html5.png", project_ids: [1,2])
