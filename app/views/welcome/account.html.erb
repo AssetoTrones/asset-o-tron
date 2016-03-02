@@ -1,7 +1,24 @@
 <h1>Welcome Mr Roboto</h1>
+<style>body {
+    background-image: url('http://uryud.com/assetotron/asseto.png');
+    background-repeat: no-repeat;
+    background-position: right 140px;
+    background-origin: content-box;
+  }</style>
 
-<ul>
-  <li><%= link_to 'Create a new project', '/projects/new' %></li>
-  <li><%= link_to "Projects I'm working on", projects_path %></li>
-  <li><%= link_to 'Projects', projects_path %></li>
-</ul>
+<div class="row">
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-12 lead">Welcome Mr Roboto<hr></div>
+          </div>
+          <div class="row">
+			<div class="col-md-4 text-center">
+          <p><%= link_to 'Create a new project', '/projects/new' %></p>
+          <p><%= link_to "Projects I'm working on", projects_path %></p>
+          <p><%= link_to "My projects", projects_path %></p>
+          <p><%= link_to "Profile", 'welcome/profile' %></p>
+      </div>
+    </div>
+  </div>

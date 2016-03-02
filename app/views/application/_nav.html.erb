@@ -8,19 +8,14 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="/">Asset-O-Tron</a>
-        <p class="navbar-brand">Hi Mr Roboto!</p>
-        <img class="navbar-brand" src="http://uryud.com/assetotron/asseto-avatar-color.png" height="300">
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "My account", controller: "welcome", action: "account" %></li>
-          <li><%= link_to 'Projects', projects_path %></li>
-          <li><%= link_to 'Resources', resources_path %></li>
-          <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to "Mr Roboto | account", controller: "welcome", action: "account" %></li>
+          <li><%= link_to "Projects", controller: "projects", action: "list" %></li>
+          <li><%= link_to "Resources", controller: "resources", action: "list" %></li>
+          <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: "log-out" %></li>
         </ul>
-        <form class="navbar-form navbar-right">
-          <input type="text" class="form-control" placeholder="Search...">
-        </form>
       </div>
     </div>
   </nav>

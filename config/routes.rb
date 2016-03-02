@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
   devise_for :users, :controllers => { :registrations => "users/registrations" }
-  root 'welcome#index'
+  root 'welcome#account'
   get 'welcome/index'
   get 'welcome/account'
+  get 'welcome/profile'
   get 'comments/create'
   get 'resources/list'
   get 'projects/list'
