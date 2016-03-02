@@ -13,7 +13,7 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="welcome/account">Dashboard</a></li>
+          <li><%= link_to "My account", controller: "welcome", action: "account" %></li>
           <li><%= link_to 'Projects', projects_path %></li>
           <li><%= link_to 'Resources', resources_path %></li>
           <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
