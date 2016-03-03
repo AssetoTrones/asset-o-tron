@@ -26,7 +26,13 @@
 
 Project.create(name: "Posters Redradix", description: "programming posters by Redradix", url: "https://github.com/redradix/posters", resource_ids: [])
 
-Project.create(name: "Asset-O-Tron presentation", description: "the assets for the app presentation", url: "https://github.com/redradix/posters", resource_ids: [])
+Project.create(name: "Asset-O-Tron presentation", description: "the assets for the app presentation", url: "http://uryud.com/assetotron", resource_ids: [])
+
+Project.create(name: "Asset-O-Tron gifs", description: "our gifs for the app presentation", url: "http://uryud.com/assetotron", resource_ids: [])
+
+Project.create(name: "People pretending they are working", description: "our way to look nice and employable", url: "http://uryud.com/assetotron", resource_ids: [])
+
+# posters
 
 Resource.create(name: "Ruby", description: "Ruby poster created by redradix", url: "http://uryud.com/assetotron/ruby.png", project_ids: [1,2])
 
@@ -44,5 +50,51 @@ Resource.create(name: "Angular", description: "Angular poster created by redradi
 
 ## Asset-O-Tron assets
 Resource.create(name: "Manifest", description: "Our Agile manifest for the finest fair teamworking", url: "http://uryud.com/assetotron/manifest.png", project_ids: [2])
+
+Resource.create(name: "Little roboto", description: "We have a cute mascot!", url: "hhttp://uryud.com/assetotron/more/asseto.jpg", project_ids: [2])
+
+Resource.create(name: "Avatar", description: "Our dummy user needs a cool avatar", url: "http://uryud.com/assetotron/more/asseto-avatar.png", project_ids: [2])
+
+Resource.create(name: "Team", description: "Team introduction", url: "http://uryud.com/assetotron/more/Team.jpg", project_ids: [2])
+
+Resource.create(name: "Poker scrum", description: "Custom poker scrum cards for our meetings", url: "http://uryud.com/assetotron/more/poker.png", project_ids: [2])
+
+
+# gifs
+
+Resource.create(name: "Diego gif", description: "Diego shows his frustration with css float: 'right'", url: "http://uryud.com/assetotron/more/diego.gif", project_ids: [3])
+
+Resource.create(name: "Nerea gif", description: "Nerea fights bad design and color combination", url: "http://uryud.com/assetotron/more/nerea.gif", project_ids: [3])
+
+Resource.create(name: "Lucas gif", description: "Certain controller errors can bring Lucas down", url: "http://uryud.com/assetotron/more/lucas.gif", project_ids: [3])
+
+Resource.create(name: "Ronnie gif", description: "Ronnie vs unresponsive design", url: "http://uryud.com/assetotron/more/ronnie.gif", project_ids: [3])
+
+Resource.create(name: "Marco gif", description: "Marco has_and_belongs_to_many tables", url: "http://uryud.com/assetotron/more/marco.gif", project_ids: [3])
+
+# serious
+Resource.create(name: "Nerea professional look", description: "Nerea knows his stuff", url: "http://uryud.com/assetotron/more/nerea-work.jpg", project_ids: [4])
+
+Resource.create(name: "Diego professional look", description: "Diego knows his stuff", url: "http://uryud.com/assetotron/more/diego-work.jpg", project_ids: [4])
+
+Resource.create(name: "Marco professional look", description: "Marco knows his stuff", url: "http://uryud.com/assetotron/more/marco-work.jpg", project_ids: [4])
+
+Resource.create(name: "Lucas professional look", description: "Lucas knows his stuff", url: "http://uryud.com/assetotron/more/lucas-work.jpg", project_ids: [4])
+
+Resource.create(name: "Ronnie professional look", description: "Ronnie knows his stuff", url: "http://uryud.com/assetotron/more/ronnie-work.jpg", project_ids: [4])
+
+
+# comments
+
+
+
+
+
+
+
+
+
+
+
 
 ## comments
