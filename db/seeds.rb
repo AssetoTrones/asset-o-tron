@@ -84,10 +84,6 @@ Resource.create(name: "Lucas professional look", description: "Lucas knows his s
 Resource.create(name: "Ronnie professional look", description: "Ronnie knows his stuff", url: "http://uryud.com/assetotron/more/ronnie-work.jpg", project_ids: [4])
 
 
-# comments
-
-Resource.update(name: "Little roboto", description: "We have a cute mascot!", url: "http://uryud.com/assetotron/more/asseto.jpg", project_ids: [2])
-
 
 
 
