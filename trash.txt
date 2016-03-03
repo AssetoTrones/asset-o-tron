@@ -1,3 +1,6 @@
+<%= link_to image_tag(resources_path(:id => @resource.id), :class => 'img-responsive'), {:action => 'show', :controller => 'resources'}, :class => 'thumbnail' %>
+
+
 routes
 /users/sign_up
 

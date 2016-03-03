@@ -16,7 +16,8 @@
     </div>
     <% for resource in @project.resource %>
       <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <%= link_to image_tag(resource.url.to_s, :class => 'img-responsive'), {:action => 'show', :controller => 'resources'}, :class => 'thumbnail' %>
+          <%= link_to image_tag(resource.url.to_s, :class => 'img-responsive'), {:action => 'show', :controller => 'resources', id: resource }, :class => 'thumbnail' %>
+
       </div>
     <% end %>
 </div>

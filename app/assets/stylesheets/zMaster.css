@@ -5,6 +5,14 @@
 	background-origin: content-box;
 }*/
 
+li{
+  list-style: none;
+}
+
+.table-responsive
+{
+    overflow-x: auto;
+}
 
 a.thumbnail:hover,
 a.thumbnail:focus,

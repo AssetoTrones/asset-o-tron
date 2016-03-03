@@ -2,27 +2,29 @@
 
 <h1>Resources</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @resources.each do |resource| %>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
       <tr>
-        <td><%= resource.name %></td>
-        <td><%= resource.description %></td>
-        <td><%= link_to 'Show', resource %></td>
-        <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
-
+        <th>Name</th>
+        <th>Description</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @resources.each do |resource| %>
+        <tr>
+          <td><%= resource.name %></td>
+          <td><%= resource.description %></td>
+          <td><%= link_to 'Show', resource %></td>
+          <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
+
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 <br>
 
