@@ -1,28 +1,25 @@
-== README
+#Asset-O-Tron
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##A simple asset-project-team manager on Ruby on Rails
 
-Things you may want to cover:
+##Team
 
-* Ruby version
+###Lucas deGomez
+[GitHub](https://github.com/criaturaExperimental)
 
-* System dependencies
+###Marco Antonio López de la Nieta
+[GitHub](https://github.com/criaturaExperimental)
 
-* Configuration
+###Ronald Romero
+[Bitbucket](https://bitbucket.org/rocknnie)
 
-* Database creation
+###Nerea Díaz
+[GitHub](https://github.com/nereadr)
 
-* Database initialization
+###Diego Sánchez
+[GitHub](https://github.com/diegosruby)
 
-* How to run the test suite
+With Alejandro Andrés - Redradix
+[GitHub](https://github.com/fuzzyalej)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+For TalentumEmpleo @ Telefónica
