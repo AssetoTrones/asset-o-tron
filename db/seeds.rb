@@ -21,11 +21,28 @@
 # resource_list.each do |name,description,url,project_ids|
 #   Resource.create(name: name, description: description, url: url, project_ids: project_ids)
 # end
+#
+# #1,2,3,4,5,6,7
 
-Project.create(name: "Posters Redradix", description: "programming posters by Redradix", url: "https://github.com/redradix/posters", resource_ids: [1,2,3])
+Project.create(name: "Posters Redradix", description: "programming posters by Redradix", url: "https://github.com/redradix/posters", resource_ids: [])
 
-Resource.create(name: "Ruby", description: "Ruby poster created by redradix", url: "https://github.com/redradix/posters/raw/master/png/ruby.png", project_ids: [1])
+Project.create(name: "Asset-O-Tron presentation", description: "the assets for the app presentation", url: "https://github.com/redradix/posters", resource_ids: [])
 
-Resource.create(name: "HTML5", description: "AngularJS poster created by redradix", url: "https://raw.githubusercontent.com/redradix/posters/master/png/html5.png", project_ids: [1,2])
+Resource.create(name: "Ruby", description: "Ruby poster created by redradix", url: "http://uryud.com/assetotron/ruby.png", project_ids: [1,2])
 
-Resource.create(name: "CSS3", description: "CSS3 poster created by redradix", url: "https://github.com/redradix/posters/raw/master/png/css3.png", project_ids: [1])
+Resource.create(name: "HTML5", description: "Html5 poster created by redradix", url: "http://uryud.com/assetotron/html5.png", project_ids: [1,2])
+
+Resource.create(name: "CSS3", description: "CSS3 poster created by redradix", url: "http://uryud.com/assetotron/css3.png", project_ids: [1])
+
+Resource.create(name: "JavaScript", description: "JavaScript poster created by redradix", url: "http://uryud.com/assetotron/javascript.png", project_ids: [1])
+
+Resource.create(name: "Sass", description: "Sass poster created by redradix", url: "http://uryud.com/assetotron/sass.png", project_ids: [1])
+
+Resource.create(name: "NodeJs", description: "NodeJs poster created by redradix", url: "http://uryud.com/assetotron/node.png", project_ids: [1])
+
+Resource.create(name: "Angular", description: "Angular poster created by redradix", url: "http://uryud.com/assetotron/angular.png", project_ids: [1])
+
+## Asset-O-Tron assets
+Resource.create(name: "Manifest", description: "Our Agile manifest for the finest fair teamworking", url: "http://uryud.com/assetotron/manifest.png", project_ids: [2])
+
+## comments
