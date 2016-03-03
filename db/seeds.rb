@@ -51,7 +51,7 @@ Resource.create(name: "Angular", description: "Angular poster created by redradi
 ## Asset-O-Tron assets
 Resource.create(name: "Manifest", description: "Our Agile manifest for the finest fair teamworking", url: "http://uryud.com/assetotron/manifest.png", project_ids: [2])
 
-Resource.create(name: "Little roboto", description: "We have a cute mascot!", url: "hhttp://uryud.com/assetotron/more/asseto.jpg", project_ids: [2])
+Resource.create(name: "Little roboto", description: "We have a cute mascot!", url: "http://uryud.com/assetotron/more/asseto.jpg", project_ids: [2])
 
 Resource.create(name: "Avatar", description: "Our dummy user needs a cool avatar", url: "http://uryud.com/assetotron/more/asseto-avatar.png", project_ids: [2])
 
@@ -85,6 +85,8 @@ Resource.create(name: "Ronnie professional look", description: "Ronnie knows his
 
 
 # comments
+
+Resource.update(name: "Little roboto", description: "We have a cute mascot!", url: "http://uryud.com/assetotron/more/asseto.jpg", project_ids: [2])
 
 
 
