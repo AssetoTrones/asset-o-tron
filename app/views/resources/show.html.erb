@@ -35,17 +35,6 @@
   <% end %>
 </p>
 <h1>Adding comments</h1>
-<p>
-  <%= form_tag( { controller: "comments", action: "create" }, method: "get") %>
-  <%= hidden_field_tag(:id, @resource.id) %>
-  <p>
-    <%= label_tag(:author, "Author: ") %>
-    <%= text_field_tag(:author) %>
-  </p>
-  <p>
-    <%= submit_tag("Add Comment") %>
-  </p>
-</p>
 
 <p>
   <%= form_tag( { controller: "comments", action: "create" }, method: "get") %>
