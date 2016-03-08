@@ -1,9 +1,11 @@
 #Asset-O-Tron
-***
-A simple asset-project-team manager on Ruby on Rails, final project for the Ruby on Rails bootcamp in collaboration with Redradix.
+A simple asset-project-team manager on Ruby on Rails, final project for the Ruby on Rails bootcamp in collaboration with Redradix. This is a teaser versión of the full app, to make it available for deployment.
+
+##Heroku deploy
+You can find the app deployed in Heroku [here](https://lit-springs-11550.herokuapp.com/)
 
 ##Team
-***
+
 Lucas deGomez
 [GitHub](https://github.com/criaturaExperimental)
 
@@ -19,7 +21,7 @@ Nerea Díaz
 Diego Sánchez
 [GitHub](https://github.com/diegosruby)
 ***
-With Alejandro Andrés - Redradix
+With Alejandro Andrés (mentor) - Redradix
 [GitHub](https://github.com/fuzzyalej)
 ***
 For TalentumEmpleo @ Telefónica
